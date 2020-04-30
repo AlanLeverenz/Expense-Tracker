@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project is designed to keep track of expenses. It was originally built in vanilla JavaScript, but is now being restructured as a React app.
+
 ## Available Scripts
 
 In the project directory, you can run:
