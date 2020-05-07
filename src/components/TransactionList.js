@@ -6,8 +6,6 @@ export const TransactionList = () => {
     // destructured context - transactions is an array of transactions
     const { transactions } = useContext(GlobalContext);
 
-    console.log(transactions[0].amount);
-
     return (
         // fragment, map through transactions provided by GlobalContext via Provider, 
         // pass transaction as a prop to Transaction component
