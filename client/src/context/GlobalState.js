@@ -35,7 +35,7 @@ export const GlobalProvider = ({ children }) => {
         }
     }
 
-    // react actions to update display
+    // react actions to update view
     async function deleteTransaction(id) {
         // delete from database
         try {
@@ -59,10 +59,10 @@ export const GlobalProvider = ({ children }) => {
                 'Content-Type': 'application/json'
             }
         }
-
+        // add to database
         try {
             const res = await axios.post('/api/v1/transactions', transaction, config);
-
+            // update the view
             dispatch({
                 type: 'ADD_TRANSACTION',
                 payload: res.data.data
