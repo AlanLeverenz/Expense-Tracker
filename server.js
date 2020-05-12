@@ -16,6 +16,10 @@ const app = express();
 // to use body parser
 app.use(express.json());
 
+if(process.env.NODE_ENV) {
+    app.use(morgan('dev'));
+}
+
 // user the api route for transactions
 app.use('/api/v1/transactions', transactions);
 
